@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Everything about coffee.">
+        <meta name="keywords" content="Coffee, beverage, toast">
+        <meta name="robots" content="index, follow">
+        <meta name="author" content="Thiago Cabral Correia">
+        <link rel="stylesheet" href="./css/style-c4c.css">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="icon" href="img/icon.png">
+        <title>Crazy4Coffee</title>
+    </head>
+    <body>
+        <!-- HEADER -->
+        <header class="top">
+            <a href="index-c4c.html">
+                <h1 class="logo">Crazy4Coffee</h1>
+            </a>
+            <button class="btn-menu">
+                <i class="fa fa-bars fa-lg"></i>
+            </button>
+            <nav class="menu">
+                <a class="btn-close"><i class="fa fa-times"></i></a>
+                <ul>
+                    <li><a href="index-c4c.html">Home</a></li>
+                    <li><a href="index-c4c.html">Beverage</a></li>
+                    <li><a href="index-c4c.html">Bean</a></li>
+                    <li><a href="index-c4c.html">Blog</a></li>
+                    <li><a href="index-c4c.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- BANNER -->
+        <div class="banner">
+            <div class="title">
+                <h2>DO YOU LOVE COFFEE?</h2>
+                <h3>This is the ideal place for you to learn more about the best drink in the world.</h3>
+            </div>
+            <div class="-banner-buttons">
+                <div class="btn btn-register">Register<i class="fa fa-arrow-circle-right"></i></div>
+                <div class="btn btn-about">About<i class="fa fa-question-circle"></i></div>
+            </div>
+        </div>
+        <!-- ARTS -->
+        <main class="matter">
+            <article class="coffee-article">
+                <a href="#"><img src="img/drinks.jpg" alt="Coffee Drinks"></a>
+                <div class="inner">
+                    <a href="#">Coffee Drinks</a>
+                    <h4>Delicious combinations</h4>
+                    <p>While all coffee drinks are based on either coffee or espresso, some drinks add milk or cream, some are made with
+                    steamed milk or non-dairy milks, or some beverages add water. There are many variations to the basic coffee or espresso bases.</p>
+                </div>
+            </article>
+            <article class="coffee-article">
+                <a href="#"><img src="img/processing.jpg" alt="Processing"></a>
+                <div class="inner">
+                    <a href="#">Processing</a>
+                    <h4>Before the roasted coffee</h4>
+                    <p>Coffee berries and their seeds undergo several processes before they become the familiar roasted coffee. Let's get to know the process step by step.</p>
+                </div>
+            </article>
+            <article class="coffee-article">
+                <a href="#"><img src="img/sustainable.jpg" alt="Sustainable"></a>
+                <div class="inner">
+                    <a href="#">Sustainable</a>
+                    <h4>Grown and marketed for its sustainability</h4>
+                    <p>This term has entered the lexicon and this segment has quickly grown into a multibillion-dollar industry of its own with
+                    potentially implications for other commodities as demand and awareness expand.</p>
+                </div>
+            </article>
+        </main>
+        <!-- NEWSLETTER -->
+        <section class="newsletter container bg-black">
+            <h2>Register now!</h2>
+            <h3>News, tips and more</h3>
+            <form>
+                <input class="bg-black radius" type="email" name="email" placeholder="Seu email">
+                <button class="bg-white radius"> Register </button>
+            </form>
+        </section>
+
+        <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>
+            $(".btn-menu").click(function(){
+                $(".menu").show();
+            })
+            $(".btn-close").click(function(){
+                $(".menu").hide();
+            })
+        </script>
+    </body>
+</html>
