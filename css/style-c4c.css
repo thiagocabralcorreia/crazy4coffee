@@ -17,11 +17,32 @@ body {
 a {
     text-decoration: none;
 }
-/* TOP */
-.top {
+
+/* CONTAINER */
+
+.container {
     width: 100%;
     float: left;
     padding: 3% 4%;
+    text-align: center;
+}
+
+/* BACKGROUNDS */
+
+.bg-gradient {
+    background: linear-gradient(to right, #da6709, #8a3f02);
+}
+
+.bg-black {
+    background-color: #130400;
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+/* TOP */
+.top {
     background-color: #000000;
 }
 
@@ -39,7 +60,6 @@ a {
     float: right;
     text-align: center;
     color: #fff;
-    background: linear-gradient(to right, #da6709, #8a3f02);
     border-radius: 55px;
     cursor: pointer;
 }
@@ -48,12 +68,12 @@ a {
 
 .menu {
     display: none;
-    width: 100%;
     height: 100%;
     position: fixed;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.9);
     top: 0;
     left: 0;
+    list-style-type: none;
 }
 
 .btn-close {
@@ -67,11 +87,13 @@ a {
 .menu ul {
     width: 100%;
     float: left;
-    text-align:  center;
+    text-align: center;
+    color: #fff;
 }
 
 .menu li {
     padding: 1%;
+    list-style-type: none;
 }
 
 .menu li a {
@@ -88,10 +110,6 @@ a {
 /* BANNER */
 
 .banner {
-    width: 100%;
-    float: left;
-    text-align: center;
-    padding: 3% 4%;
     background: url(../img/bg.jpg) no-repeat fixed;
 }
 
@@ -132,12 +150,14 @@ a {
 }
 
 .btn-register {
-    background-color: #fff;
+    color: #130400;
+}
+
+.btn-register i {
     color: #130400;
 }
 
 .btn-about {
-    background-color: #130400;
     color: #fff;
     margin-top: 2%;
 }
@@ -145,14 +165,12 @@ a {
 /* ARTICLES */
 
 .matter {
-    max-width: 100%;
-    float: left;
-    padding: 3% 4%;
+   
 }
 
 .coffee-article {
     max-width: 100%;
-    background-color: #fff;
+
     text-align: left;
     margin-bottom: 3%;
     border-radius: 7px 7px 0 0;
@@ -186,14 +204,6 @@ a {
 
 /* NEWSLETTER */
 
-.newsletter {
-    width: 100%;
-    float: left;
-    text-align: center;
-    padding: 3% 4%;
-    background-color: #130400;
-}
-
 .newsletter h2 {
     font-size: 1.5em;
     color: #fff;
@@ -212,7 +222,6 @@ a {
 .newsletter input {
     width: 100%;
     color: #fff; 
-    background-color: #130400;;
     border: 1px solid rgba(255,255,255,0.3);
     padding: 5%;
     border-radius: 7px;
@@ -225,4 +234,139 @@ a {
     padding: 5%;
     margin-top: 2%;
     border-radius: 7px;
+}
+
+/* FOOTER */
+
+.social-icons a {
+    font-size: 1.5em;
+    color: rgba(255,255,255,0.7); margin-right: 3%;
+}
+
+.social-icons a:last-child {
+    margin-right: 0;
+}
+
+.social-icons a:hover {
+    color: rgb(255,255,255);
+}
+
+.copyright {
+    color: rgba(255, 255, 255, 0.7); margin-top:2%;
+}
+
+/* MOBILE FIRST */
+
+/* SMALL DEVICES - SMARTPHONES */
+
+@media screen and (min-width: 500px) {
+.btn {
+    font-size: 2em;
+}
+}
+
+/* SMALL DEVICES - TABLETS*/
+
+@media screen and (min-width: 768px) {
+.logo {
+    width: 300px;
+    background: url(../img/logo.png) center center/300px no-repeat;
+}
+.coffee-article {
+    width: 49%;
+    float: left;
+    margin-right: 2%;
+}
+.coffee-article:nth-child(2){
+    margin-right: 0;
+}
+.newsletter h2 {
+    font-size: 2em;
+    font-weight: bold;
+}
+.newsletter h3 {
+    font-size: 1.5em;
+}
+.newsletter input {
+    width: 70%;
+    padding: 2%;
+    float: left;
+    margin-right: 1%;
+}
+.newsletter button {
+    width: 29%;
+    padding: 2%;
+    float: right;
+    margin-top: 0;}
+}
+
+/* MEDIUM DEVICES - TABLETS & DESKTOPS*/
+
+@media screen and (min-width: 960px) {
+.title {
+    width: 70%;
+    float: left;
+    text-align: left;
+}
+.title h2 {
+    font-size: 3em;
+}
+.title h3 {
+    font-size: 2em;
+}
+
+.banner-buttons {
+    width: 30%;
+    float: right;
+    margin-top: 0;
+}
+.coffee-article {
+    width: 32%;
+}
+.coffee-article:nth-child(2){
+    margin-right: 2%;
+}
+.coffee-article:nth-child(3){
+    margin-right: 0;
+}
+.newsletter input {
+    width: 60%;
+    float: none;
+}
+.newsletter button {
+    width: 20%;
+    float: none;
+}
+}
+
+/* LARGE DEVICES - WIDE SCREENS*/
+
+@media screen and (min-width: 1280px) {
+.btn-menu {
+    display: none;
+}
+.btn-close {
+    display: none;
+}
+.menu {
+    width: auto;
+    line-height: 50%;
+    float: right;
+    display: block !important;
+    position: static;
+    
+}
+.menu li {
+    padding: 0;
+    float: left;
+}
+.menu li a {
+    color: #fff;
+    font-size: 1.2em;
+    padding: 15px;
+}
+.menu li a:hover {
+    border: none;
+    color:#da6709;
+}
 }
